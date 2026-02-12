@@ -29,9 +29,18 @@
 @media (max-width: 600px) {
   .header {
     padding: 16px 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
   }
 
   .brand {
     font-size: 10px;
+  }
+
+  .meta {
+    text-align: center;
+    font-size: 9px;
   }
 }

@@ -78,8 +78,8 @@
 
 @media (max-width: 600px) {
   .waitlist-container {
-    bottom: 28px;
-    padding: 0 24px;
+    bottom: 12vh;
+    padding: 0 32px;
   }
 
   .input-group input[type="email"] {
