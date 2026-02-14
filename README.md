@@ -1,16 +1,52 @@
-# React + Vite
+# Photogenik Website (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repo contains the **frontend website for Photogenik**.
 
-Currently, two official plugins are available:
+It includes:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Landing page layout and styling
+- Image gallery experience
+- Waitlist/email capture UI
+- Header branding + Instagram link
 
-## React Compiler
+## What this project is
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend only** (React + Vite)
+- Static assets live in `public/`
+- UI components live in `src/components/`
 
-## Expanding the ESLint configuration
+## Quick start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Run locally:
+
+```bash
+npm run dev
+```
+
+3. Build for production:
+
+```bash
+npm run build
+```
+
+## Important note on email capture
+
+The waitlist form is currently wired as a frontend placeholder.
+
+Backend hookup is still needed in `src/components/WaitlistForm.jsx` (there are clear `TODO(backend)` comments in that file for the next developer).
+
+## Main files you will likely edit
+
+- `src/components/Header.jsx`
+- `src/components/Header.css`
+- `src/components/Gallery.jsx`
+- `src/components/Gallery.css`
+- `src/components/WaitlistForm.jsx`
+- `src/components/WaitlistForm.css`
+- `src/index.css`
